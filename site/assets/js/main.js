@@ -1,5 +1,5 @@
-const header = document.querySelector(".home-header, .pricing-header");
 const menuToggle = document.querySelector(".menu-toggle");
+const header = menuToggle?.closest(".site-header");
 
 if (header && menuToggle) {
   const mobileQuery = window.matchMedia("(max-width: 699px)");

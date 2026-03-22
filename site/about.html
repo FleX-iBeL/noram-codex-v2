@@ -3,78 +3,100 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Noram Legal | About Wireframe</title>
+    <title>Noram Legal | Een juridische partner voor ondernemers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&amp;family=Open+Sans:wght@400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
-  <body>
+  <body class="about-page">
     <div class="site-shell">
-      <header class="wireframe-block site-header">
-        <div class="header-brand" data-label="Brand">
+      <header class="wireframe-block site-header about-header">
+        <div class="header-brand">
+          <span class="brand-mark" aria-hidden="true"></span>
           <a class="brand-link" href="index.html">Noram Legal</a>
         </div>
-        <nav class="header-nav" data-label="Navigation" aria-label="Primary">
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+          aria-label="Open menu"
+        >
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-line" aria-hidden="true"></span>
+          <span class="menu-toggle-text">Menu</span>
+        </button>
+        <nav class="header-nav" id="primary-nav" aria-label="Primary">
           <a class="nav-pill" href="index.html">Home</a>
           <a class="nav-pill current-nav" href="about.html" aria-current="page">About</a>
           <a class="nav-pill" href="services.html">Services</a>
           <a class="nav-pill" href="pricing.html">Pricing</a>
           <a class="nav-pill" href="contact.html">Contact</a>
         </nav>
-        <a class="wireframe-button" href="contact.html">Plan een kennismaking</a>
+        <a class="wireframe-button header-cta" href="contact.html"
+          >Plan een kennismaking</a
+        >
       </header>
 
       <main class="page-main">
-        <section class="wireframe-block section section-hero" data-section="Hero">
-          <div class="section-content">
-            <h1>Een juridische partner voor ondernemers.</h1>
+        <section class="wireframe-block section about-hero">
+          <div class="about-hero-shell">
+            <div class="section-content about-hero-copy">
+              <h1>Een juridische partner voor ondernemers.</h1>
 
-            <p>
-              Noram Legal ondersteunt ondernemers bij juridische vraagstukken die
-              impact hebben op hun onderneming.
-            </p>
+              <p class="about-hero-lead">
+                Noram Legal ondersteunt ondernemers bij juridische vraagstukken die
+                impact hebben op hun onderneming.
+              </p>
 
-            <p>
-              Van contracten en arbeidszaken tot geschillen en strategisch advies
-              — wij helpen ondernemers om duidelijkheid te krijgen, risico’s te
-              begrijpen en de juiste stappen te zetten.
-            </p>
+              <p class="about-hero-support">
+                Van contracten en arbeidszaken tot geschillen en strategisch advies
+                — wij helpen ondernemers om duidelijkheid te krijgen, risico’s te
+                begrijpen en de juiste stappen te zetten.
+              </p>
 
-            <p>
-              Onze aanpak is betrokken, helder en doortastend. Zodat jij weet
-              waar je staat en met vertrouwen verder kunt ondernemen.
-            </p>
+              <p class="about-hero-support">
+                Onze aanpak is betrokken, helder en doortastend. Zodat jij weet
+                waar je staat en met vertrouwen verder kunt ondernemen.
+              </p>
 
-            <p>
-              Bij Noram draait het niet alleen om juridisch advies, maar om
-              begeleiding die past bij de praktijk van ondernemen.
-            </p>
+              <p class="about-hero-support">
+                Bij Noram draait het niet alleen om juridisch advies, maar om
+                begeleiding die past bij de praktijk van ondernemen.
+              </p>
 
-            <div class="cta-group">
-              <a class="wireframe-button" href="contact.html">Plan een kennismaking</a>
-              <span class="cta-divider">of</span>
-              <a
-                class="wireframe-button wireframe-button-secondary"
-                href="contact.html"
-              >
-                Bespreek je situatie
-              </a>
+              <div class="cta-group about-hero-actions">
+                <a class="wireframe-button" href="contact.html">Plan een kennismaking</a>
+                <span class="cta-divider">of</span>
+                <a
+                  class="wireframe-button wireframe-button-secondary"
+                  href="contact.html"
+                >
+                  Bespreek je situatie
+                </a>
+              </div>
             </div>
-          </div>
 
-          <div class="wireframe-card placeholder-card" data-label="Visual">
-            <div class="media-placeholder">Team / trust visual placeholder</div>
-            <div class="placeholder-copy">
-              <span>Portrait, office, or brand story image block</span>
-              <span>Responsive placeholder for human / trust-oriented content</span>
+            <div class="about-hero-visual" aria-hidden="true">
+              <span class="about-hero-orbit about-hero-orbit-large"></span>
+              <span class="about-hero-orbit about-hero-orbit-small"></span>
+              <div class="about-hero-panel">
+                <span class="about-hero-line about-hero-line-wide"></span>
+                <span class="about-hero-line"></span>
+                <span class="about-hero-line about-hero-line-short"></span>
+              </div>
             </div>
           </div>
         </section>
 
-        <section
-          class="wireframe-block section"
-          data-section="Waarom Noram bestaat"
-        >
-          <div class="section-grid two-column-grid">
-            <div class="section-intro">
+        <section class="wireframe-block section about-purpose">
+          <div class="about-purpose-shell">
+            <div class="section-intro about-purpose-intro">
               <h2>Juridische ondersteuning kan anders</h2>
               <p>
                 Veel ondernemers ervaren juridische dienstverlening als
@@ -90,12 +112,10 @@
 
               <p>Noram is opgericht vanuit de overtuiging dat dit anders kan.</p>
 
-              <p>
-                Ondernemers hebben geen behoefte aan alleen juridisch advies.
-              </p>
+              <p>Ondernemers hebben geen behoefte aan alleen juridisch advies.</p>
             </div>
 
-            <div class="wireframe-card card-stack" data-label="Partner behoefte">
+            <div class="about-purpose-aside">
               <p class="card-heading">Ze hebben behoefte aan een partner die:</p>
               <ul class="list-block">
                 <li>hun onderneming begrijpt</li>
@@ -106,161 +126,168 @@
             </div>
           </div>
 
-          <div class="wireframe-card card-stack" data-label="Positionering">
+          <div class="about-positioning">
             <p>
               Noram brengt juridische expertise samen met een betrokken en
               praktische aanpak, zodat ondernemers grip krijgen op hun situatie en
               weten welke stappen ze kunnen zetten.
             </p>
-            <p>Niet afstandelijk, maar betrokken.</p>
-            <p>Niet ingewikkeld, maar duidelijk.</p>
+            <div class="about-positioning-lines">
+              <p>Niet afstandelijk, maar betrokken.</p>
+              <p>Niet ingewikkeld, maar duidelijk.</p>
+            </div>
           </div>
         </section>
 
-        <section class="wireframe-block section" data-section="Werkwijze">
-          <div class="section-intro">
-            <h2>Zo ondersteunt Noram ondernemers</h2>
-            <p>
-              Juridische vraagstukken vragen om meer dan alleen advies. Ze vragen
-              om duidelijkheid, betrokkenheid en een aanpak die past bij de
-              realiteit van ondernemen.
-            </p>
+        <section class="wireframe-block section about-method">
+          <div class="about-method-shell">
+            <div class="section-intro about-method-intro">
+              <h2>Zo ondersteunt Noram ondernemers</h2>
+              <p>
+                Juridische vraagstukken vragen om meer dan alleen advies. Ze vragen
+                om duidelijkheid, betrokkenheid en een aanpak die past bij de
+                realiteit van ondernemen.
+              </p>
 
-            <p>
-              Noram werkt daarom met een persoonlijke en praktische benadering,
-              waarbij we niet alleen adviseren, maar ook begeleiden en meedenken.
-            </p>
+              <p>
+                Noram werkt daarom met een persoonlijke en praktische benadering,
+                waarbij we niet alleen adviseren, maar ook begeleiden en meedenken.
+              </p>
+            </div>
+
+            <div class="about-method-list">
+              <article class="about-method-item">
+                <h3>Betrokken bij jouw onderneming</h3>
+                <p>
+                  We verdiepen ons in jouw situatie en begrijpen de context waarin
+                  je opereert.
+                </p>
+              </article>
+
+              <article class="about-method-item">
+                <h3>Heldere communicatie</h3>
+                <p>
+                  Je krijgt duidelijke inzichten, zodat je begrijpt waar je staat
+                  en welke keuzes je hebt.
+                </p>
+              </article>
+
+              <article class="about-method-item">
+                <h3>Doortastend wanneer het nodig is</h3>
+                <p>
+                  Wanneer actie nodig is, zorgen we voor een duidelijke strategie
+                  en begeleiding.
+                </p>
+              </article>
+
+              <article class="about-method-item">
+                <h3>Praktisch en oplossingsgericht</h3>
+                <p>Het doel is een oplossing die werkt voor jouw onderneming.</p>
+              </article>
+            </div>
           </div>
 
-          <div class="card-grid feature-grid">
-            <article class="wireframe-card card-stack" data-label="Principe">
-              <h3>Betrokken bij jouw onderneming</h3>
-              <p>
-                We verdiepen ons in jouw situatie en begrijpen de context waarin
-                je opereert.
-              </p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Principe">
-              <h3>Heldere communicatie</h3>
-              <p>
-                Je krijgt duidelijke inzichten, zodat je begrijpt waar je staat
-                en welke keuzes je hebt.
-              </p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Principe">
-              <h3>Doortastend wanneer het nodig is</h3>
-              <p>
-                Wanneer actie nodig is, zorgen we voor een duidelijke strategie
-                en begeleiding.
-              </p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Principe">
-              <h3>Praktisch en oplossingsgericht</h3>
-              <p>
-                Het doel is een oplossing die werkt voor jouw onderneming.
-              </p>
-            </article>
-          </div>
-
-          <p>Zo weet je als ondernemer niet alleen wat er speelt, maar ook wat je kunt doen.</p>
+          <p class="about-method-note">
+            Zo weet je als ondernemer niet alleen wat er speelt, maar ook wat je
+            kunt doen.
+          </p>
         </section>
 
-        <section class="wireframe-block section" data-section="Merkwaarden">
-          <div class="section-intro">
-            <h2>Waar Noram voor staat</h2>
-            <p>
-              De manier waarop Noram werkt, komt voort uit duidelijke keuzes.
-            </p>
+        <section class="wireframe-block section about-values">
+          <div class="about-values-shell">
+            <div class="section-intro about-values-intro">
+              <h2>Waar Noram voor staat</h2>
+              <p>
+                De manier waarop Noram werkt, komt voort uit duidelijke keuzes.
+              </p>
 
-            <p>
-              Niet alleen in wat we doen, maar vooral in hoe we dat doen. Deze
-              principes vormen de basis van onze samenwerking met ondernemers.
-            </p>
+              <p>
+                Niet alleen in wat we doen, maar vooral in hoe we dat doen. Deze
+                principes vormen de basis van onze samenwerking met ondernemers.
+              </p>
+            </div>
+
+            <div class="about-values-list">
+              <article class="about-value-item">
+                <h3>Duidelijkheid boven complexiteit</h3>
+                <p>We zorgen dat communicatie helder is en begrijpelijk.</p>
+              </article>
+
+              <article class="about-value-item">
+                <h3>Betrokkenheid bij jouw onderneming</h3>
+                <p>We begrijpen de context van jouw bedrijf.</p>
+              </article>
+
+              <article class="about-value-item">
+                <h3>Verantwoordelijkheid nemen</h3>
+                <p>We begeleiden en helpen bij het zetten van stappen.</p>
+              </article>
+
+              <article class="about-value-item">
+                <h3>Doortastend handelen</h3>
+                <p>We zorgen voor actie wanneer dat nodig is.</p>
+              </article>
+            </div>
           </div>
 
-          <div class="card-grid feature-grid">
-            <article class="wireframe-card card-stack" data-label="Kernwaarde">
-              <h3>Duidelijkheid boven complexiteit</h3>
-              <p>We zorgen dat communicatie helder is en begrijpelijk.</p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Kernwaarde">
-              <h3>Betrokkenheid bij jouw onderneming</h3>
-              <p>We begrijpen de context van jouw bedrijf.</p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Kernwaarde">
-              <h3>Verantwoordelijkheid nemen</h3>
-              <p>We begeleiden en helpen bij het zetten van stappen.</p>
-            </article>
-
-            <article class="wireframe-card card-stack" data-label="Kernwaarde">
-              <h3>Doortastend handelen</h3>
-              <p>We zorgen voor actie wanneer dat nodig is.</p>
-            </article>
-          </div>
-
-          <p>
+          <p class="about-values-note">
             Deze manier van werken zorgt ervoor dat ondernemers niet alleen advies
             krijgen, maar ondersteuning die daadwerkelijk helpt.
           </p>
         </section>
 
-        <section class="wireframe-block section" data-section="Voor wie Noram er is">
-          <div class="section-intro">
-            <h2>Voor wie Noram er is</h2>
-            <p>
-              Noram werkt met ondernemers die behoefte hebben aan duidelijke en
-              betrokken juridische ondersteuning.
-            </p>
-
-            <p>
-              Of je nu net bent gestart of al langer onderneemt — juridische
-              vraagstukken ontstaan in elke fase.
-            </p>
-          </div>
-
-          <div class="card-grid two-column-grid">
-            <div class="wireframe-card card-stack" data-label="Doelgroep">
-              <p class="card-heading">Wij ondersteunen onder andere:</p>
-              <ul class="list-block">
-                <li>
-                  Ondernemers die duidelijkheid willen over hun juridische positie
-                </li>
-                <li>
-                  Ondernemers die te maken krijgen met een conflict of geschil
-                </li>
-                <li>
-                  Ondernemers die hun contracten en afspraken goed willen regelen
-                </li>
-                <li>
-                  Ondernemers die behoefte hebben aan een juridische sparringpartner
-                </li>
-              </ul>
-            </div>
-
-            <div class="wireframe-card card-stack" data-label="Situaties">
-              <p class="card-heading">
-                Situaties waarin Noram wordt ingeschakeld:
+        <section class="wireframe-block section about-audience">
+          <div class="about-audience-shell">
+            <div class="section-intro about-audience-intro">
+              <h2>Voor wie Noram er is</h2>
+              <p>
+                Noram werkt met ondernemers die behoefte hebben aan duidelijke en
+                betrokken juridische ondersteuning.
               </p>
-              <ul class="list-block">
-                <li>Conflicten met werknemers</li>
-                <li>Onbetaalde facturen</li>
-                <li>Vastlopende samenwerkingen</li>
-                <li>Onduidelijkheid over rechten en verplichtingen</li>
-              </ul>
+
+              <p>
+                Of je nu net bent gestart of al langer onderneemt — juridische
+                vraagstukken ontstaan in elke fase.
+              </p>
+            </div>
+
+            <div class="about-audience-columns">
+              <div class="about-audience-column">
+                <p class="card-heading">Wij ondersteunen onder andere:</p>
+                <ul class="list-block">
+                  <li>
+                    Ondernemers die duidelijkheid willen over hun juridische positie
+                  </li>
+                  <li>
+                    Ondernemers die te maken krijgen met een conflict of geschil
+                  </li>
+                  <li>
+                    Ondernemers die hun contracten en afspraken goed willen regelen
+                  </li>
+                  <li>
+                    Ondernemers die behoefte hebben aan een juridische sparringpartner
+                  </li>
+                </ul>
+              </div>
+
+              <div class="about-audience-column about-audience-column-alt">
+                <p class="card-heading">Situaties waarin Noram wordt ingeschakeld:</p>
+                <ul class="list-block">
+                  <li>Conflicten met werknemers</li>
+                  <li>Onbetaalde facturen</li>
+                  <li>Vastlopende samenwerkingen</li>
+                  <li>Onduidelijkheid over rechten en verplichtingen</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <p>
+          <p class="about-audience-note">
             Noram is er voor ondernemers die hun juridische zaken serieus nemen en
             op tijd willen handelen.
           </p>
 
-          <div class="inline-cta">
+          <div class="inline-cta about-audience-cta">
             <p>Herken je jouw situatie hierin?</p>
             <a
               class="wireframe-button wireframe-button-secondary"
@@ -271,57 +298,84 @@
           </div>
         </section>
 
-        <section class="wireframe-block section" data-section="Final CTA">
-          <div class="section-intro">
-            <h2>Bespreek jouw juridische situatie met Noram</h2>
-            <p>
-              Juridische vraagstukken kunnen grote impact hebben op je
-              onderneming. Het is daarom belangrijk om tijdig duidelijkheid te
-              krijgen over je positie en de mogelijke vervolgstappen.
-            </p>
+        <section class="wireframe-block section about-final-cta">
+          <div class="about-final-panel">
+            <div class="section-intro about-final-intro">
+              <h2>Bespreek jouw juridische situatie met Noram</h2>
+              <p>
+                Juridische vraagstukken kunnen grote impact hebben op je
+                onderneming. Het is daarom belangrijk om tijdig duidelijkheid te
+                krijgen over je positie en de mogelijke vervolgstappen.
+              </p>
 
-            <p>
-              Noram helpt ondernemers om hun situatie te begrijpen en samen te
-              bepalen wat de beste aanpak is.
-            </p>
+              <p>
+                Noram helpt ondernemers om hun situatie te begrijpen en samen te
+                bepalen wat de beste aanpak is.
+              </p>
 
-            <p>Een eerste gesprek geeft vaak al direct inzicht.</p>
+              <p>Een eerste gesprek geeft vaak al direct inzicht.</p>
 
-            <p>
-              Het eerste contact is bedoeld om je situatie te bespreken en te
-              kijken hoe Noram je kan helpen.
-            </p>
-          </div>
+              <p>
+                Het eerste contact is bedoeld om je situatie te bespreken en te
+                kijken hoe Noram je kan helpen.
+              </p>
+            </div>
 
-          <div class="cta-group cta-group-wide">
-            <a class="wireframe-button" href="contact.html">Plan een kennismaking</a>
-            <span class="cta-divider">of</span>
-            <a
-              class="wireframe-button wireframe-button-secondary"
-              href="contact.html"
-            >
-              Bespreek je situatie
-            </a>
+            <div class="cta-group cta-group-wide about-final-actions">
+              <a class="wireframe-button" href="contact.html">Plan een kennismaking</a>
+              <span class="cta-divider">of</span>
+              <a
+                class="wireframe-button wireframe-button-secondary"
+                href="contact.html"
+              >
+                Bespreek je situatie
+              </a>
+            </div>
           </div>
         </section>
       </main>
 
-      <footer class="wireframe-block site-footer" data-section="Footer">
+      <footer class="wireframe-block site-footer about-footer">
         <div class="footer-grid">
-          <div class="wireframe-card footer-card" data-label="Footer item">
-            <p>contactgegevens</p>
+          <div class="wireframe-card footer-card footer-brand-card">
+            <p class="footer-title">contactgegevens</p>
+            <div class="header-brand footer-brand-lockup">
+              <span class="brand-mark" aria-hidden="true"></span>
+              <a class="brand-link footer-brand-link" href="index.html">Noram Legal</a>
+            </div>
+            <p class="footer-tagline">
+              Juridische rust voor ondernemers. Wanneer het echt telt.
+            </p>
+            <a class="wireframe-link footer-email" href="mailto:info@noram.nl"
+              >info@noram.nl</a
+            >
           </div>
-          <div class="wireframe-card footer-card" data-label="Footer item">
-            <p>links</p>
+          <div class="wireframe-card footer-card">
+            <p class="footer-title">links</p>
+            <div class="footer-links">
+              <a href="about.html">About</a>
+              <a href="services.html">Services</a>
+              <a href="pricing.html">Pricing</a>
+              <a href="contact.html">Contact</a>
+            </div>
           </div>
-          <div class="wireframe-card footer-card" data-label="Footer item">
-            <p>privacy</p>
+          <div class="wireframe-card footer-card">
+            <p class="footer-title">privacy</p>
+            <div class="footer-pill-row">
+              <span class="footer-pill">Privacy</span>
+              <span class="footer-pill">Voorwaarden</span>
+            </div>
           </div>
-          <div class="wireframe-card footer-card" data-label="Footer item">
-            <p>socials</p>
+          <div class="wireframe-card footer-card">
+            <p class="footer-title">socials</p>
+            <div class="footer-pill-row">
+              <span class="footer-pill">LinkedIn</span>
+              <span class="footer-pill">WhatsApp</span>
+            </div>
           </div>
         </div>
       </footer>
     </div>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
