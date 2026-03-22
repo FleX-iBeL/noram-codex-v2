@@ -1,4 +1,4 @@
-const header = document.querySelector(".home-header");
+const header = document.querySelector(".home-header, .pricing-header");
 const menuToggle = document.querySelector(".menu-toggle");
 
 if (header && menuToggle) {
